@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Question3</title>
+</head>
+<body>
+    <h2>
+        imagine you are going out to do some grocery shopping.<br>
+        so you have an array called shoppinglist with all the products you want to buy.<br>
+        now that you are inside of the shop , you have a basket with all the products from your list,but you want to add a few more.<br>
+        create a new array called shoppingbasket,that will be a copy of the shoppinglist array,and add some new products into it..
+    </h2>
+    <script>
+        var shoppinglist=["pulses","cereals","spices","herbs","tea_leaves"];
+        // for (let i=0;i<shoppinglist.length;i++)
+        // {
+        //     console.log(shoppinglist);
+        // }
+       console.log(shoppinglist);
+
+       var shoppingbucket=[...shoppinglist];
+       shoppingbucket.push("biscuits");
+       console.log(shoppingbucket);
+    </script>
+</body>
+</html>

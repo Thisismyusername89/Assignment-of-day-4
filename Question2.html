@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Question1</title>
+</head>
+<body>
+    <h2>
+        destructing object
+    </h2>
+    <script>
+        const student ={
+            name:"Helsinki",
+            age: 24,
+            projects:{
+                dicegame:"two player dice using javascript"
+        }
+        };
+        const{name,age,projects:{dicegame}}= student;
+        console.log(`name=${name} age= ${age} projects=${dicegame}`);
+    </script>
+</body>
+</html>

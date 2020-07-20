@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Question4</title>
+</head>
+<body>
+    <h2>
+        make a calculator in javascript<br>
+         which can do operations as addition,subtraction,multiplication,division,square root,percentage.
+    </h2>
+    <script>
+        var result;
+        var f;
+        var s;
+       
+        let o =prompt("which operation you would like to perform : (+),(-),(*),(/),(%),(sqroot),(percentage)");
+        if(o==="sqroot")
+        {
+            let input=prompt("enter the number to perform sqroot operation");
+            result=input.sqroot(input);
+            document.write("sqroot of "+ input +"is" +result);
+            console.log("sqroot of "+ input +"is" +result);
+        }
+        else
+        {
+            let f=prompt("enter the first number");
+            
+            let s=prompt("enter tht second number");
+            f=Number(f);
+            s=Number(s);
+            result=Number(result);
+
+            if (o==="+"||o==="ADD"||o==="Add"||o==="add"||o==="ADDITION"||o==="Addition"||o==="addition")
+            {
+                result=f+s;
+                console.log(result);
+            }
+            else if (o==="-"||o==="SUB"||o==="Sub"||o==="sub"||o==="SUBTRACT"||o==="Subtract"||o==="subtract")
+            {
+                result=f-s;
+                console.log(result);
+            }
+            else if  (o==="*"||o==="MUL"||o==="Mul"||o==="mul"||o==="MULTIPLY"||o==="Multiply"||o==="multiply")
+            {
+            result=f*s;
+            console.log(result);
+            }
+            else if (o==="/"||o==="DIV"||o==="Div"||o==="div"||o==="DIVIDE"||o==="Divide"||o==="divide")
+            {
+            result=f/s;
+            console.log(result);
+            }
+            else if (o==="%"||o==="PER"||o==="Per"||o==="per"||o==="PERCENT"||o==="Percent"||o==="percent"||o==="PERCENTAGE"||o==="Percentage"||o==="percentage")
+            { 
+            result=f*s/100;
+            console.log(result);
+            }
+            else 
+            {
+                console.log("please select the correct operation");
+            }
+        
+       /* switch(o)
+        {
+            case ("+"||"add"):
+            result=f+s;
+            console.log(result);
+            break;
+            case ("ADD"||"Add"):
+            result=f+s;
+            console.log(result);
+            break;
+            case ("add"||"ADDITION"):
+            result=f+s;
+            console.log(result);
+            break;
+            case ("Addition"||"addition"):
+            result=f+s;
+            console.log(result);
+            break;
+            case ("-"||"SUB"):
+            case("Sub"||"sub"):
+            case("SUBTRACT"||"Subtract"):
+            case("subtract"):
+            result=f-s;
+            console.log(result);
+            break;
+            case ("*"||"MUL"):
+            case("Mul"||"mul"):
+            case("MULTIPLY"||"Multiply"):
+            case("multiply"):
+            result=f*s;
+            console.log(result);
+            break;
+            case ("/","DIV","Div","div","DIVIDE","Divide","divide"):
+            result=f/s;
+            console.log(result);
+            break;
+            case ("%","PER","Per","per","PERCENT","Percent","percent","PERCENTAGE","Percentage","percentage"): 
+            result=f*s/100;
+            console.log(result);
+            break;
+            default: 
+            document.write("please select the correct operation");
+            console.log("please select the correct operation");
+        };*/
+        }
+        
+    </script>
+</body>
+</html>
