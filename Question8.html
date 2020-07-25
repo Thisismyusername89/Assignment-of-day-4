@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Question1</title>
+</head>
+<body>
+    <script>
+        // function ask(question,yes,no)
+        const ask=(question,yes,no)=>
+        {
+            if (confirm(question))yes()
+            else no();
+
+        }
+            ask("do you agree",
+            function(){alert("you agreed");},
+            function(){alert("you canceled the execution");}
+            );   
+ </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Question7</title>
+</head>
+<body>
+    <script>
+        
+        let input=prompt("enter a number to grt prime number till");
+            input=Number(input);
+        for(let n=2;n<=input;n++)
+        {
+           var isprime=true;
+            for(let divisor=2;divisor<n;divisor++)
+            {
+            
+           if(n%divisor===0 && n!==divisor)
+           {
+            var isprime=false;
+           }
+        
+            }
+            
+            if (isprime===true){
+                console.log(n);
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
